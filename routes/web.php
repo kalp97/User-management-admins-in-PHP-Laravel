@@ -28,3 +28,4 @@ Route::get('/questions/{question_id}/answers/{answer_id}', 'AnswerController@sho
 Route::resources([
     'questions' => 'QuestionController',
 ]);
+//updated
