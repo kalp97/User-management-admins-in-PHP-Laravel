@@ -22,4 +22,3 @@ class QuestionsTableSeeder extends Seeder
 
     }
 }
-//updated

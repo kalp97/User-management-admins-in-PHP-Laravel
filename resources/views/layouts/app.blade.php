@@ -89,9 +89,11 @@
     </nav>
 
     <main class="py-4">
+        @include('flash.error')
+        @include('flash.messages')
+        @include('flash.status')
         @yield('content')
     </main>
 </div>
 </body>
 </html>
-//updated

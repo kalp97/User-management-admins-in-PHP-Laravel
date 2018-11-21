@@ -23,4 +23,3 @@ class AnswersTableSeeder extends Seeder
         }
     }
 }
-// updated
