@@ -11,6 +11,8 @@
                     </a>
 
 
+
+
                     <div class="card-body">
 
                         <div class="card-deck">
@@ -45,14 +47,27 @@
                         </div>
 
                     </div>
+
+
+
+
                     <div class="card-footer">
                         <div class="float-right">
                             {{ $questions->links() }}
                         </div>
                     </div>
 
+
+
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="panel-body">
+        @component('components.who')
+        @endcomponent
+    </div>
+
 @endsection
