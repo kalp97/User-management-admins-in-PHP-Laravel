@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Profile;
@@ -17,7 +15,6 @@ class ProfileController extends Controller
     {
         //
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -29,7 +26,6 @@ class ProfileController extends Controller
         $edit = FALSE;
         return view('profileForm', ['profile' => $profile,'edit' => $edit  ]);
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -53,7 +49,6 @@ class ProfileController extends Controller
         $profile->save();
         return redirect()->route('home')->with('message', 'Profile Created');
     }
-
     /**
      * Display the specified resource.
      *
@@ -66,14 +61,12 @@ class ProfileController extends Controller
         $profile = $user->profile;
         return view('profile')->with('profile', $profile);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
     public function edit($user, $profile)
     {
         $user = User::find($user);
@@ -104,7 +97,6 @@ class ProfileController extends Controller
         $profile->save();
         return redirect()->route('home')->with('message', 'Updated Profile');
     }
-
     /**
      * Remove the specified resource from storage.
      *
