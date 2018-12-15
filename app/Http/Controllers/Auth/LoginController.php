@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
@@ -39,7 +39,20 @@ class LoginController extends Controller
 
     public function userLogout()
     {
+       // echo  \Session::get('email');
+       // User::where('email','=', \Session::get('email'))->update(array(
+         //   'is_active'=> 0,
+        //));
+       //\Session::forget('email');
+
+        $user = Auth::user();
+        User::where('email','=', $user->email )->update(array(
+            'is_active'=>0
+        ));
+        \Session::forget('email',$user->email);
+
         Auth::guard('web')->logout();
+
         return redirect('/');
     }
 }
