@@ -8,7 +8,7 @@
                     <div class="panel-heading">ADMIN Dashboard</div>
 
                    <div class="row">
-                       <h1>Online Users:</h1>
+                       <h1>History of all Online Users:</h1>
                        <table>
                            @foreach($users as $user)
 
