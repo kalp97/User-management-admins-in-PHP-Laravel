@@ -11,7 +11,7 @@ To run the FAQ project:
 
 #Epic:
 
-This is a FAQ project where users can ask questions and answers the questions. The new feature I have implemented is the Admin access where Admin can LOGIN with the Project Owner provided
+This is a FAQ project where users can ask questions and answers the questions. The new feature I have implemented is the Admin role, where  Admin can LOGIN with the Project Owner provided
 
 * E-mail ID:"adminss@njit.edu" (without the double quotes)
 * Password:"admins"            (without the double quotes)
